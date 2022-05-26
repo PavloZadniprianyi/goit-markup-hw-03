@@ -44,8 +44,6 @@ body {
 
 .header-nav .link.current {
   color: var(--accent-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-link {
@@ -81,13 +79,18 @@ body {
 
 /* ------------------HERO-------------------- */
 
-/* .container {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   outline: 1px solid tomato;
-} */
+}
+
+.hero {
+  display: inline-block;
+  margin: 94px 215px;
+}
 
 .hero-title {
   text-transform: uppercase;
@@ -98,11 +101,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--hero-text-color);
   background: var(--hero-background-color);
+  padding: 200px 452px 280px 452px;
 }
 
 .hero-btn {
   display: inline-block;
   padding: 10px 32px;
+  margin: auto
   text-decoration: none;
   font-family: inherit;
   font-weight: 700;
