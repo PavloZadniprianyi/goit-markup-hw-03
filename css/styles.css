@@ -8,6 +8,7 @@
   --second-accent-color: #188ce8;
   --promo-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
+  --border-bottom-color: #EEEEEE;
   --margin-bottom-standart: 94px;
 }
 
@@ -66,10 +67,16 @@ img {
   padding-right: 15px;
 
   width: 1200px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 /* -----------------HEADER----------------- */
+
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
+}
 
 .main-nav {
   display: flex;
@@ -362,7 +369,29 @@ img {
 
 /* ------------------PORTFOLIO------------------- */
 
-/* ------------------CATEGORY------------------- */
+.portfolio-nav {
+  margin-bottom: var(--margin-bottom-standart);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ECECEC;
+}
+
+/* ------------------FILTER------------------- */
+
+.filter {
+  margin-bottom: var(--margin-bottom-standart);
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 34px;
+}
+
+.filter-list .filter-item + .filter-item {
+  margin-left: 8px;
+}
 
 .filter-btn {
   font-family: "Roboto";
@@ -383,6 +412,32 @@ img {
 }
 
 /* ------------------PROJEKT------------------- */
+
+.projekt-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projekt-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-bottom-color)
+}
+
+.projekt-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+
+.projekt-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.ready-projects {
+  margin: 20px 24px;
+}
 
 .projekt-name {
   font-weight: 700;
