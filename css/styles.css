@@ -8,8 +8,8 @@
   --second-accent-color: #188ce8;
   --promo-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
-  --border-bottom-color: #EEEEEE;
-  --margin-bottom-standart: 94px;
+  --border-bottom-color: #eeeeee;
+  --padding-standart: 94px 0px;
 }
 
 body {
@@ -75,7 +75,7 @@ img {
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
+  border-bottom-color: #ececec;
 }
 
 .main-nav {
@@ -147,15 +147,14 @@ img {
 
 .hero {
   display: block;
-  padding: 200px 452px 280px 452px;
-  margin-bottom: var(--margin-bottom-standart);
+  padding: 200px 0px;
 
   background: var(--hero-background-color);
 }
 
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
+  margin: 0px;
+  padding-bottom: 30px;
 
   text-transform: uppercase;
   font-weight: 900;
@@ -195,7 +194,8 @@ img {
 /* ------------------BENEFITS-------------------- */
 
 .benefits {
-  margin-bottom: var(--margin-bottom-standart);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefits-list {
@@ -232,7 +232,7 @@ img {
 /* ------------------PROMO-------------------- */
 
 .promo {
-  margin-bottom: var(--margin-bottom-standart);
+  padding-bottom: 94px;
 }
 
 .promo-list {
@@ -244,8 +244,8 @@ img {
 }
 
 .promo-title {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 0px;
+  padding-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -259,13 +259,12 @@ img {
 
 .about {
   background-color: var(--promo-background-color);
-
-  margin-bottom: var(--margin-bottom-standart);
+  padding-bottom: 94px;
 }
 
 .about-title {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin: 0px;
+  padding-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -313,18 +312,19 @@ img {
 /* ------------------FOOTER------------------- */
 
 .footer {
-  background: var(--footer-background-color);
+  padding-top: 60px;
   padding-bottom: 60px;
+
+  background: var(--footer-background-color);
+}
+
+.logo-footer {
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 .logo-color {
   color: var(--hero-text-color);
-}
-
-.logo-footer {
-  padding-top: 60px;
-  padding-bottom: 0px;
-  margin-bottom: 20px;
 }
 
 /* ------------------CONTACTS------------------- */
@@ -373,20 +373,20 @@ img {
   margin-bottom: var(--margin-bottom-standart);
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
+  border-bottom-color: #ececec;
 }
 
 /* ------------------FILTER------------------- */
 
 .filter {
-  margin-bottom: var(--margin-bottom-standart);
+  padding: 94px 0px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  padding-bottom: 50px;
 }
 
 .filter-list .filter-item + .filter-item {
@@ -394,6 +394,8 @@ img {
 }
 
 .filter-btn {
+  padding: 6px 22px;
+
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -424,7 +426,13 @@ img {
   margin-bottom: 30px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--border-bottom-color)
+  border-bottom-color: var(--border-bottom-color);
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--border-bottom-color);
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--border-bottom-color);
 }
 
 .projekt-item:nth-last-child(-n + 3) {
@@ -436,7 +444,7 @@ img {
 }
 
 .ready-projects {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .projekt-name {
