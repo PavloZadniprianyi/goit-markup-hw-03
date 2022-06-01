@@ -153,7 +153,7 @@ img {
 }
 
 .hero-title {
-  margin: 0px;
+  margin: 0px auto;
   padding-bottom: 30px;
 
   text-transform: uppercase;
@@ -162,6 +162,7 @@ img {
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  max-width: 696px;
   color: var(--hero-text-color);
 }
 
@@ -203,7 +204,7 @@ img {
 }
 
 .benefits-list .benefits-item + .benefits-item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .benefits-features {
@@ -244,8 +245,8 @@ img {
 }
 
 .promo-title {
-  margin: 0px;
-  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -259,12 +260,13 @@ img {
 
 .about {
   background-color: var(--promo-background-color);
+  padding-top: 186px;
   padding-bottom: 94px;
 }
 
 .about-title {
-  margin: 0px;
-  padding-bottom: 50px;
+  margin-top: 0px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -305,8 +307,8 @@ img {
 }
 
 .about-card {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ------------------FOOTER------------------- */
@@ -369,13 +371,6 @@ img {
 
 /* ------------------PORTFOLIO------------------- */
 
-.portfolio-nav {
-  margin-bottom: var(--margin-bottom-standart);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
-}
-
 /* ------------------FILTER------------------- */
 
 .filter {
@@ -386,7 +381,7 @@ img {
   display: flex;
   justify-content: center;
 
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-list .filter-item + .filter-item {
